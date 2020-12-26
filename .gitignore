@@ -1,0 +1,13 @@
+.idea/
+.vscode/
+node_modules/
+build/
+tmp/
+temp/
+
+*.tfstate
+*.tfstate.backup
+
+.terraform
+.docker
+.nyc_output

@@ -1,0 +1,28 @@
+{
+   "name": "covid-tracker-api",
+   "version": "1.0.0",
+   "main": "index.js",
+   "license": "MIT",
+   "devDependencies": {
+      "@types/node": "^8.0.29",
+      "@types/tap": "^14.10.1",
+      "prettier": "^2.2.1",
+      "ts-node": "3.3.0",
+      "typescript": "3.3.3333"
+   },
+   "dependencies": {
+      "@types/config": "^0.0.37",
+      "config": "^3.3.3",
+      "fastify": "^3.9.1",
+      "mysql": "^2.14.1",
+      "reflect-metadata": "^0.1.10",
+      "tap": "^14.11.0",
+      "ts-node-dev": "^1.1.1",
+      "typeorm": "0.2.29"
+   },
+   "scripts": {
+      "dev": "ts-node-dev src/main.ts",
+      "test": "NODE_ENV=test tap",
+      "seed": "ts-node src/seeders/main.ts"
+   }
+}
