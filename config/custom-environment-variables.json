@@ -2,21 +2,21 @@
   "orm": {
     "type": "TYPEORM_CONNECTION",
     "host": "TYPEORM_HOST",
-    "port": "TYPEORM_PORT",
+    "port": {
+      "__name": "TYPEORM_PORT",
+      "__format": "number"
+    },
     "username": "TYPEORM_USERNAME",
     "password": "TYPEORM_PASSWORD",
     "database": "TYPEORM_DATABASE",
-    "synchronize": "TYPEORM_SYNCHRONIZE",
+    "synchronize": {
+      "__name": "TYPEORM_SYNCHRONIZE",
+      "__format": "boolean"
+    },
     "logging": false,
-    "entities": [
-      "src/entity/**/*.ts"
-    ],
-    "migrations": [
-      "src/migration/**/*.ts"
-    ],
-    "subscribers": [
-      "src/subscriber/**/*.ts"
-    ],
+    "entities": ["src/entity/**/*.ts"],
+    "migrations": ["src/migration/**/*.ts"],
+    "subscribers": ["src/subscriber/**/*.ts"],
     "cli": {
       "entitiesDir": "src/entity",
       "migrationsDir": "src/migration",
