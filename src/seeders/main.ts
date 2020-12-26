@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 import initializeDatabase from "../modules/db";
 import { Testlog } from "../entity/Testlog";
 
