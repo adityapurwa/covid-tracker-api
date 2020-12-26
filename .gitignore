@@ -11,3 +11,5 @@ temp/
 .terraform
 .docker
 .nyc_output
+
+.env
