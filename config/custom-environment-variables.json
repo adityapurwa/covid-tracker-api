@@ -1,12 +1,12 @@
 {
   "orm": {
-    "type": "mysql",
-    "host": "localhost",
-    "port": 33060,
-    "username": "root",
-    "password": "root",
-    "database": "root",
-    "synchronize": true,
+    "type": "TYPEORM_CONNECTION",
+    "host": "TYPEORM_HOST",
+    "port": "TYPEORM_PORT",
+    "username": "TYPEORM_USERNAME",
+    "password": "TYPEORM_PASSWORD",
+    "database": "TYPEORM_DATABASE",
+    "synchronize": "TYPEORM_SYNCHRONIZE",
     "logging": false,
     "entities": [
       "src/entity/**/*.ts"
