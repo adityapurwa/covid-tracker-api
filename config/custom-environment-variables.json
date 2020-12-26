@@ -12,15 +12,6 @@
     "synchronize": {
       "__name": "TYPEORM_SYNCHRONIZE",
       "__format": "boolean"
-    },
-    "logging": false,
-    "entities": ["src/entity/**/*.ts"],
-    "migrations": ["src/migration/**/*.ts"],
-    "subscribers": ["src/subscriber/**/*.ts"],
-    "cli": {
-      "entitiesDir": "src/entity",
-      "migrationsDir": "src/migration",
-      "subscribersDir": "src/subscriber"
     }
   }
 }
