@@ -7,6 +7,12 @@ export default function initializeFastify(
   opts: FastifyServerOptions = {}
 ) {
   const app = fastify(opts);
+  app.get("/", (request, reply) => {
+    reply.send({
+      status: 200,
+      version: 1,
+    });
+  });
   initializeScanModule(app, connection);
 
   app.listen(

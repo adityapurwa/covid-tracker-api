@@ -22,4 +22,6 @@ initializeDatabase().then(async (conn) => {
     status: "positive",
     testDate: new Date(2020, 12, 21, 12, 0, 0, 0),
   }).save();
+
+  await conn.close();
 });

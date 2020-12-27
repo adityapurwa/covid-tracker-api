@@ -3,8 +3,6 @@ import { Connection, createConnection } from "typeorm";
 
 import * as config from "config";
 
-console.log(config.get("orm"));
-
 export default function initializeDatabase(): Promise<Connection> {
   return new Promise((resolve, reject) => {
     createConnection(config.get("orm"))
