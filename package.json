@@ -15,6 +15,7 @@
       "config": "^3.3.3",
       "dotenv": "^8.2.0",
       "fastify": "^3.9.1",
+      "fastify-cors": "^5.1.0",
       "mysql": "^2.14.1",
       "reflect-metadata": "^0.1.10",
       "tap": "^14.11.0",

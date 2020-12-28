@@ -1,4 +1,5 @@
 import { fastify, FastifyServerOptions } from "fastify";
+import fastifyCors from "fastify-cors";
 import initializeScanModule from "./scan";
 import { Connection } from "typeorm";
 
@@ -7,6 +8,7 @@ export default function initializeFastify(
   opts: FastifyServerOptions = {}
 ) {
   const app = fastify(opts);
+  app.register(fastifyCors);
   app.get("/", (request, reply) => {
     reply.send({
       status: 200,
