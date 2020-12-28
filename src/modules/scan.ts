@@ -70,7 +70,10 @@ export default function initializeScanModule(
       scan.province = data.province;
       scan.city = data.city;
       await scan.save();
-      const logs = await Testlog.find({ where: { nik: data.nik } });
+      const logs = await Testlog.find({
+        where: { nik: data.nik },
+        order: { testDate: "DESC" },
+      });
       reply.send({
         ...scan,
         logs,
